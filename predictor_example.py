@@ -42,6 +42,7 @@ def SelectedSAMModel():
     sam_checkpoint = "notebooks\sam_vit_h_4b8939.pth"
     model_type = "vit_h"
     device = "cuda"
+    
     sam = _build_sam( encoder_embed_dim=1280,
         encoder_depth=32,
         encoder_num_heads=16,
